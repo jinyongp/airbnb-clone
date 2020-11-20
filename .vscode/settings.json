@@ -1,0 +1,7 @@
+{
+  "python.pythonPath": "/home/jinyongp/.local/share/virtualenvs/airbnb-clone-eIJ53T4N/bin/python",
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/home/jinyongp/.local/share/virtualenvs/airbnb-clone-eIJ53T4N/bin/black",
+}
