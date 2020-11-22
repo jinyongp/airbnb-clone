@@ -32,3 +32,13 @@ class User(AbstractUser):
         max_length=50, choices=CURRENCY_CHOICES, default=CURRENCY_USD, blank=True
     )
     superhost = models.BooleanField(default=False)
+
+    def __str__(self):
+        first_name, last_name = [self.first_name, self.last_name]
+        if first_name and last_name:
+            return f"{first_name} {last_name}"
+        elif first_name:
+            return first_name
+        elif last_name:
+            return last_name
+        return self.username
